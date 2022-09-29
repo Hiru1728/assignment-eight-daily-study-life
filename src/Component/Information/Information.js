@@ -3,7 +3,7 @@ import image from '../../images/7083.jpg'
 import StudyDetails from '../../StudyDetails/StudyDetails';
 import './Information.css'
 
-const Information = () => {
+const Information = ({ informations }) => {
     return (
         <div className='information'>
             <div className='img-name'>
@@ -23,7 +23,9 @@ const Information = () => {
                 <button className='btn-text'>20</button>
             </div>
             <h4>Study Details</h4>
-            <StudyDetails></StudyDetails>
+            <StudyDetails
+                informations={informations}
+            ></StudyDetails>
             <button className='btn-active'>
                 <h3>Activity Completed</h3>
             </button>

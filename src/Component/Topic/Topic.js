@@ -8,6 +8,7 @@ import './Topic.css'
 
 const Topic = () => {
     const [courses, setCourses] = useState([]);
+    const [informations, setInformations] = useState([])
 
     useEffect(() => {
         fetch('information.json')
@@ -16,7 +17,7 @@ const Topic = () => {
     }, [])
 
     const handleAddToList = (setCourse) => {
-        console.log('Find Course');
+        setInformations(setCourse);
     }
 
     return (
@@ -40,7 +41,9 @@ const Topic = () => {
                     <Question></Question>
                 </div>
                 <div className='information-section'>
-                    <Information></Information>
+                    <Information
+                        informations={informations}
+                    ></Information>
                 </div>
             </div>
         </div>
