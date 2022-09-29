@@ -12,10 +12,9 @@ const Question = () => {
             <hr />
             <h4>Props</h4>
 
-            <p>The Data is passed from one component to another. It is Immutable (cannot be modified). Props can be used with state and functional components.Props are read-only.
-            </p>
+            <p>	Props are read-only. Props are immutable. Props allow you to pass data from one component to other components as an argument. Props can be accessed by the child component. Props can be accessed by the child component. Props are used to communicate between components.Props are used to communicate between components. Stateless component can have Props. Props make components reusable. Props are external and controlled by whatever renders the component.</p>
             <h4>STATE</h4>
-            <p>The Data is passed within the component only. It is Mutable ( can be modified). State can be used only with the state components/class component. State is both read and write.</p>
+            <p>State changes can be asynchronous. State is mutable. State holds information about the components. State cannot be accessed by child components. States can be used for rendering dynamic changes with the component. Stateless components cannot have State. State cannot make components reusable. The State is internal and controlled by the React Component itself.</p>
 
             <h1>useEffect is used for other purposes than data load</h1>
             <hr />
