@@ -7,13 +7,17 @@ import Information from '../Information/Information';
 import './Topic.css'
 
 const Topic = () => {
-    const [courses, setCourse] = useState([]);
+    const [courses, setCourses] = useState([]);
 
     useEffect(() => {
         fetch('information.json')
             .then(res => res.json())
-            .then(data => setCourse(data))
+            .then(data => setCourses(data))
     }, [])
+
+    const handleAddToList = (setCourse) => {
+        console.log('Find Course');
+    }
 
     return (
         <div>
@@ -28,6 +32,7 @@ const Topic = () => {
                         {
                             courses.map(course => <Course
                                 course={course}
+                                handleAddToList={handleAddToList}
                                 key={course.id}
                             ></Course>)
                         }
