@@ -1,8 +1,9 @@
 import React from 'react';
-import './Course.css'
+import './Course.css';
 
 const Course = ({ course, handleAddToList }) => {
     const { img, name, body, time } = course;
+
     return (
         <div className='course'>
             <img src={img} alt="" />
