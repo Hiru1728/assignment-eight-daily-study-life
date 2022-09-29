@@ -35,7 +35,7 @@
 
 /*  Mobile Device */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:680px) {
     .topic {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -47,9 +47,20 @@
 
 /* Tablet And Large Phone */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:681px) and (max-width:992px) {
 
     .load-course {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptop and PC*/
+@media only screen and (min-width: 993px) and (max-width: 1800px) {
+    .topic {
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .load-course {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

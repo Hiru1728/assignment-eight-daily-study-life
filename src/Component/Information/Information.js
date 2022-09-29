@@ -3,6 +3,9 @@ import image from '../../images/7083.jpg'
 import StudyDetails from '../../StudyDetails/StudyDetails';
 import { addToDb, getstoredBreakTime } from '../../utilities/fakedb';
 import './Information.css'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure()
 
 const Information = ({ informations }) => {
     const [firstButton, setFirstButton] = useState(0);
@@ -20,6 +23,11 @@ const Information = ({ informations }) => {
     const handleBreakBtn = (breakTime) => {
         setFirstButton(breakTime);
         addToDb(breakTime);
+    }
+
+    const notify = () => {
+
+        toast('Congratulatios')
     }
 
     return (
@@ -45,7 +53,7 @@ const Information = ({ informations }) => {
                 informations={informations}
                 firstButton={firstButton}
             ></StudyDetails>
-            <button className='btn-active'>
+            <button onClick={notify} className='btn-active'>
                 <h3>Activity Completed</h3>
             </button>
         </div >
