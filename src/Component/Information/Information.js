@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import image from '../../images/7083.jpg'
 import StudyDetails from '../../StudyDetails/StudyDetails';
+import { addToDb } from '../../utilities/fakedb';
 import './Information.css'
 
 const Information = ({ informations }) => {
-    const [firstButton, setFirstButton] = useState([]);
+    const [firstButton, setFirstButton] = useState(0);
 
     const handleBreakBtn = (breakTime) => {
-        console.log(breakTime);
         setFirstButton(breakTime);
+        addToDb(breakTime);
     }
     return (
         <div className='information'>
