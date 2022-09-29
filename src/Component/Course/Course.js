@@ -8,7 +8,7 @@ const Course = ({ course, handleAddToList }) => {
             <img src={img} alt="" />
             <h5>Name: {name}</h5>
             <p>{body}</p>
-            <h5>Time Duration: {time}</h5>
+            <h5>Time Duration: {time} hours</h5>
 
             <button onClick={() => handleAddToList(course)} className='btn-list'>
                 <p>Add to List</p>

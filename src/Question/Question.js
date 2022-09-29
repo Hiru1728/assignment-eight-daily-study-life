@@ -10,10 +10,10 @@ const Question = () => {
                 A React application is made of multiple components, each responsible for rendering a small, reusable piece of HTML. Components can be nested within other components to allow complex applications to be built out of simple building blocks. </p>
             <h1>Difference between Props and State?</h1>
             <hr />
-            <h4>Props</h4>
+            <h3>Props</h3>
 
             <p>	Props are read-only. Props are immutable. Props allow you to pass data from one component to other components as an argument. Props can be accessed by the child component. Props can be accessed by the child component. Props are used to communicate between components.Props are used to communicate between components. Stateless component can have Props. Props make components reusable. Props are external and controlled by whatever renders the component.</p>
-            <h4>STATE</h4>
+            <h3>STATE</h3>
             <p>State changes can be asynchronous. State is mutable. State holds information about the components. State cannot be accessed by child components. States can be used for rendering dynamic changes with the component. Stateless components cannot have State. State cannot make components reusable. The State is internal and controlled by the React Component itself.</p>
 
             <h1>useEffect is used for other purposes than data load</h1>

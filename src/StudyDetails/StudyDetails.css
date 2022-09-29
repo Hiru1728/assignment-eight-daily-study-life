@@ -1,0 +1,19 @@
+.study-time {
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.break-time {
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+}

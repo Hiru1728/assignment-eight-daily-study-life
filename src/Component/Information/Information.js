@@ -35,10 +35,10 @@ const Information = ({ informations }) => {
             </div>
             <h4>Added a Break</h4>
             <div className='btn-section'>
-                <button onClick={() => handleBreakBtn(10)} className='btn-text'>10s</button>
-                <button onClick={() => handleBreakBtn(40)} className='btn-text'>40s</button>
-                <button onClick={() => handleBreakBtn(30)} className='btn-text'>30s</button>
-                <button onClick={() => handleBreakBtn(20)} className='btn-text'>20</button>
+                <button onClick={() => handleBreakBtn(10)} className='btn-text'>10m</button>
+                <button onClick={() => handleBreakBtn(40)} className='btn-text'>40m</button>
+                <button onClick={() => handleBreakBtn(30)} className='btn-text'>30m</button>
+                <button onClick={() => handleBreakBtn(20)} className='btn-text'>20m</button>
             </div>
             <h4>Study Details</h4>
             <StudyDetails

@@ -1,4 +1,5 @@
 import React from 'react';
+import './StudyDetails.css'
 
 const StudyDetails = ({ informations, firstButton }) => {
     let totalTime = 0;
@@ -13,11 +14,7 @@ const StudyDetails = ({ informations, firstButton }) => {
                 <p>Study Time: {totalTime} hours</p>
             </div>
             <div className='break-time'>
-
-
-                <p>Break Time: {firstButton} second </p>
-
-
+                <p>Break Time: {firstButton} minutes </p>
             </div>
         </div>
     );
