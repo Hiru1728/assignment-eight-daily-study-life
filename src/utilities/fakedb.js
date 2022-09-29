@@ -31,5 +31,5 @@ const getstoredBreakTime = () => {
 
 export {
     addToDb,
-    getstoredBreakTime
+    getstoredBreakTime,
 }

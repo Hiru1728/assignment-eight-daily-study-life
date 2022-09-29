@@ -1,16 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import image from '../../images/7083.jpg'
 import StudyDetails from '../../StudyDetails/StudyDetails';
-import { addToDb } from '../../utilities/fakedb';
+import { addToDb, getstoredBreakTime } from '../../utilities/fakedb';
 import './Information.css'
 
 const Information = ({ informations }) => {
     const [firstButton, setFirstButton] = useState(0);
 
+
+    useEffect(() => {
+        const storedBreakTime = getstoredBreakTime();
+        let number = 0;
+        for (const id in storedBreakTime) {
+            number = id;
+        }
+        setFirstButton(number)
+    }, [])
+
     const handleBreakBtn = (breakTime) => {
         setFirstButton(breakTime);
         addToDb(breakTime);
     }
+
     return (
         <div className='information'>
             <div className='img-name'>
