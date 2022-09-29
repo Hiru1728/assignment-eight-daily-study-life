@@ -17,7 +17,8 @@ const Topic = () => {
     }, [])
 
     const handleAddToList = (setCourse) => {
-        setInformations(setCourse);
+        const newInformation = [...informations, setCourse];
+        setInformations(newInformation);
     }
 
     return (

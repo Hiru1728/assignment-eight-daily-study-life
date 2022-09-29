@@ -2,15 +2,15 @@ import React from 'react';
 
 const StudyDetails = ({ informations }) => {
 
-    let countTime = 0;
-    for (const id in informations) {
-        countTime = parseInt(informations.time);
+    let totalTime = 0;
+    for (const subject of informations) {
+        totalTime = totalTime + parseInt(subject.time);
     }
-    console.log(countTime);
+    console.log(totalTime);
     return (
         <div>
             <div className='study-time'>
-                <p>Study Time: {informations.time} hours</p>
+                <p>Study Time: {totalTime} hours</p>
             </div>
             <div className='break-time'>
                 <p>Break Time: 0 second </p>
